@@ -1,0 +1,12 @@
+Package: creepr
+Type: Package
+Title: It's just beepr but scary noises.
+Version: 0.1.0
+Author: Jack Kennedy
+Maintainer: Jack Kennedy <j.c.kennedy1@ncl.ac.uk>
+Description: The main function is creepr() which plays a spooky sound.
+    It might be used to alert the user (in a creepy way) when a script has finished running.
+License: Permissive
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
