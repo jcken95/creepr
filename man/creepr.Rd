@@ -8,7 +8,8 @@ creepr(noise)
 }
 \arguments{
 \item{noise}{The chosen noise to play. Must be one of
-<insert list of noises>
+"creature", "eerie", "intense", "laugh"
+"piano", "piano2", "ringing" or "strings"
 If no noise is chosen, a random noise is played.}
 }
 \description{
