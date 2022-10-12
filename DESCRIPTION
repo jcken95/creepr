@@ -6,6 +6,8 @@ Author: Jack Kennedy
 Maintainer: Jack Kennedy <j.c.kennedy1@ncl.ac.uk>
 Description: The main function is creepr() which plays a spooky sound.
     It might be used to alert the user (in a creepy way) when a script has finished running.
+Imports:
+    beepr
 License: Permissive
 Encoding: UTF-8
 LazyData: true
