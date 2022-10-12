@@ -18,6 +18,5 @@ creepr <- function(noise) {
 
     beepr:::play_file(sound_path)
   }
-
 }
 
