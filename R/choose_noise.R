@@ -2,11 +2,9 @@
 #'
 #' Used when the user does not specify a creepy noise
 #'
-choose_noise <- function() {
-  noises <- c("creature", "eerie", "intense", "laugh",
-             "piano", "piano2", "ringing", "strings")
+choose_noise <- function(noises) {
   chosen_noise <- sample(noises,  1)
-  sound_path <- system.file(
+  system.file(
     paste0("extdata/sounds/", chosen_noise, ".wav"),
     package = "creepr")
 }

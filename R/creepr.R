@@ -8,15 +8,19 @@
 #'  If no noise is chosen, a random noise is played.
 #' @export
 creepr <- function(noise) {
-  if(missing(noise)) {
-    noise <- choose_noise()
+  all_noises <- c("creature", "eerie", "intense", "laugh",
+                  "piano", "piano2", "ringing", "strings")
+  if (missing(noise)) {
+    noise <- choose_noise(all_noises)
     beepr:::play_file(noise)
-  } else {
+  } else if (!(noise %in% all_noises)) {
+    noise <- choose_noise(all_noises)
+    beepr:::play_file(noise)
+    message("That's not an allowed noise.")
+  } else  {
     sound_path <- system.file(
       paste0("extdata/sounds/", noise, ".wav"),
       package = "creepr")
-
     beepr:::play_file(sound_path)
   }
 }
-
