@@ -4,7 +4,10 @@
 \alias{choose_noise}
 \title{Choose a random, creepy noise}
 \usage{
-choose_noise()
+choose_noise(noises)
+}
+\arguments{
+\item{noises}{Vector of noise names}
 }
 \description{
 Used when the user does not specify a creepy noise
