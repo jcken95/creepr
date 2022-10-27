@@ -18,8 +18,9 @@ creepr <- function(noise) {
     beepr:::play_file(noise)
     message("That's not an allowed noise.")
   } else  {
+    path <- file.path("extdata", "sounds", paste0(noise, ".wav")) 
     sound_path <- system.file(
-      paste0("extdata/sounds/", noise, ".wav"),
+      path,
       package = "creepr")
     beepr:::play_file(sound_path)
   }

@@ -5,7 +5,8 @@
 #' @param noises Vector of noise names
 choose_noise <- function(noises) {
   chosen_noise <- sample(noises,  1)
+  path <- file.path("extdata", "sounds", paste0(chosen_noise, ".wav")) 
   system.file(
-    paste0("extdata/sounds/", chosen_noise, ".wav"),
+    path,
     package = "creepr")
 }
