@@ -1,7 +1,7 @@
 Type: Package
 Package: creepr
 Title: It's just beepr but scary noises
-Version: 0.1.0
+Version: 0.1.1
 Author: Jack Kennedy
 Maintainer: Jack Kennedy <jckennedy18@gmail.com>
 Description: The main function is creepr() which plays a spooky sound. It
