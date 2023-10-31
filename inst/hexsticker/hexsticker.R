@@ -18,6 +18,8 @@ colours = tibble::tibble(
 # base plot ----
 
 ## this plot is just to satisfy the first argument of hexSticker::sticker()
+plot_data = tibble::tibble(x = 0)
+
 base_plot <- plot_data %>%
   ggplot() +
   theme_void() +
