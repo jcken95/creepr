@@ -10,7 +10,7 @@ showtext_auto()
 font_add_google("Creepster")
 main_font <- "Creepster"
 
-colours = tibble::tibble(
+colours <- tibble::tibble(
   background = "black",
   accent = "green"
 )
@@ -18,7 +18,7 @@ colours = tibble::tibble(
 # base plot ----
 
 ## this plot is just to satisfy the first argument of hexSticker::sticker()
-plot_data = tibble::tibble(x = 0)
+plot_data <- tibble::tibble(x = 0)
 
 base_plot <- plot_data %>%
   ggplot() +
@@ -33,15 +33,15 @@ base_plot
 
 sticker(base_plot,
         package = "creepr",
-        p_family = main_font, 
+        p_family = main_font,
         p_color = colours$accent,
         p_size = 42,
         p_y = 1,
         s_x = -10,
         s_y = -10,
-        s_width=1.4,
-        s_height=1.2, 
+        s_width = 1.4,
+        s_height = 1.2,
         h_size = 2,
         h_fill = colours$background,
-        h_color = colours$accent, 
+        h_color = colours$accent,
         filename = "inst/hexsticker/hexsticker.png")
