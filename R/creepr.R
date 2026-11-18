@@ -1,11 +1,18 @@
 #' Play a creepy noise
 #'
-#' This function plays a creepy noise
+#' This function plays a creepy noise.
 #' @import beepr
 #' @param noise The chosen noise to play. Must be one of
-#'  "creature", "eerie", "intense", "laugh"
-#'  "piano", "piano2", "ringing" or "strings"
-#'  If no noise is chosen, a random noise is played.
+#'   "creature", "eerie", "intense", "laugh"
+#'   "piano", "piano2", "ringing" or "strings".
+#' 
+#'   If no noise is chosen, a random noise is played.
+#' @examples
+#' # Play a random noise
+#' creepr()
+#' 
+#' # Play a particular noise, e.g.
+#' creepr("creature")
 #' @export
 creepr <- function(noise) {
   all_noises <- c("creature", "eerie", "intense", "laugh",

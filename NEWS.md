@@ -1,3 +1,8 @@
+# creepr 0.1.2
+
+  * Add examples to exported function documentation.
+
+
 # creepr 0.1.1
 
   * chore: add package boilerplate (NEWS, DESCRIPTION, .Rproj, .gitignore)
