@@ -1,11 +1,17 @@
 #' Play a creepy noise
 #'
-#' This function plays a creepy noise
-#' @import beepr
+#' This function plays a creepy noise.
 #' @param noise The chosen noise to play. Must be one of
-#'  "creature", "eerie", "intense", "laugh"
-#'  "piano", "piano2", "ringing" or "strings"
-#'  If no noise is chosen, a random noise is played.
+#'   "creature", "eerie", "intense", "laugh"
+#'   "piano", "piano2", "ringing" or "strings".
+#' 
+#'   If no noise is chosen, a random noise is played.
+#' @examples
+#' # Play a random noise
+#' creepr()
+#' 
+#' # Play a particular noise, e.g.
+#' creepr("creature")
 #' @export
 creepr <- function(noise) {
   all_noises <- c("creature", "eerie", "intense", "laugh",
@@ -14,9 +20,8 @@ creepr <- function(noise) {
     noise <- choose_noise(all_noises)
     beepr:::play_file(noise)
   } else if (!(noise %in% all_noises)) {
-    noise <- choose_noise(all_noises)
-    beepr:::play_file(noise)
     message("That's not an allowed noise.")
+    creepr()
   } else {
     path <- file.path("extdata", "sounds", paste0(noise, ".wav"))
     sound_path <- system.file(path, package = "creepr")

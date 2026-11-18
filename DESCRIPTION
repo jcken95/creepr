@@ -1,7 +1,7 @@
 Type: Package
 Package: creepr
 Title: It's just beepr but scary noises
-Version: 0.1.1
+Version: 0.1.2
 Author: Jack Kennedy
 Maintainer: Jack Kennedy <jckennedy18@gmail.com>
 Description: The main function is creepr() which plays a spooky sound. It
@@ -12,4 +12,4 @@ Imports:
     beepr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+Config/roxygen2/version: 8.1.1
