@@ -1,7 +1,6 @@
 #' Play a creepy noise
 #'
 #' This function plays a creepy noise.
-#' @import beepr
 #' @param noise The chosen noise to play. Must be one of
 #'   "creature", "eerie", "intense", "laugh"
 #'   "piano", "piano2", "ringing" or "strings".
