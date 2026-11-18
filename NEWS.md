@@ -1,6 +1,7 @@
 # creepr 0.1.2
 
   * Add examples to exported function documentation.
+  * Refactor code to avoid repetition.
 
 
 # creepr 0.1.1
