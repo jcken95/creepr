@@ -18,13 +18,13 @@ creepr <- function(noise) {
                   "piano", "piano2", "ringing", "strings")
   if (missing(noise)) {
     noise <- choose_noise(all_noises)
-    beepr:::play_file(noise)
+    beepr::beep(noise)
   } else if (!(noise %in% all_noises)) {
     message("That's not an allowed noise.")
     creepr()
   } else {
     path <- file.path("extdata", "sounds", paste0(noise, ".wav"))
     sound_path <- system.file(path, package = "creepr")
-    beepr:::play_file(sound_path)
+    beepr::beep(sound_path)
   }
 }

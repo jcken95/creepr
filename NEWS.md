@@ -1,3 +1,8 @@
+# creepr 0.1.3
+
+  * Avoid calling internal methods from a package dependency.
+
+
 # creepr 0.1.2
 
   * Add examples to exported function documentation.
